@@ -5,8 +5,8 @@ const path = require('path');
 const app = express();
 const router = express.Router();
 
-router.get("/", (req, res) => {
-    res.sendFile(path.resolve('./dist/frontpage.html'));
+router.get("/no-time-to-lose", (req, res) => {
+    res.sendFile(path.resolve("./dist/frontpage.html"));
     //res.sendFile(path.resolve("./dist/frontpage.html"));
 });
 
