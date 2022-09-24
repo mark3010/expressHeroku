@@ -6,11 +6,7 @@ const app = express();
 const router = express.Router();
 
 router.get("/no-time-to-lose", (req, res) => {
-    //res.sendFile(path.resolve("./public/frontpage.html"));
-    //res.sendFile(__dirname + "./public/frontpage.html");
-    res.sendFile('frontpage.html', { root: "./public" })
-    //res.send(path.resolve("./public/frontpage.html"))
-    //res.sendFile(path.resolve("./dist/frontpage.html"));
+    res.sendFile(path.resolve("../dist/index.html"));
 });
 
 app.use(`/.netlify/functions/api`, router);
