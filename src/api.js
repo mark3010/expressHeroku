@@ -6,7 +6,7 @@ const app = express();
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.sendFile(path.join('./dist/', '/index.html'));
+    res.sendFile(path.resolve('./dist/frontpage.html'));
     //res.sendFile(path.resolve("./dist/frontpage.html"));
 });
 
