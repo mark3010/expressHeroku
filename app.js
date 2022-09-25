@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.static("public"))
 
-router.get("/no-time-to-lose", (req, res) => {
+router.get("/", (req, res) => {
     res.sendFile(path.resolve("./public/frontpage.html"));
 });
 
