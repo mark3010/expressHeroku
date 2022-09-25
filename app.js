@@ -1,11 +1,11 @@
-import express = "express";
-import path = "path";
+import express from "express";
+import path from "path";
 
 const app = express();
 
 app.use(express.static("public"))
 
-router.get("/", (req, res) => {
+app.get("/", (req, res) => {
     res.sendFile(path.resolve("./public/frontpage.html"));
 });
 
